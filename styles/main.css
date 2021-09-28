@@ -36,3 +36,13 @@ img {
   height: 30px;
   margin-right: 10px;
 }
+
+h2 {
+  color: var(--polar-3);
+}
+h5 {
+  color: var(--aurora-1);
+}
+p {
+  color: var(--polar-1);
+}
