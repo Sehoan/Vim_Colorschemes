@@ -1,9 +1,18 @@
+<!--
+  List of Boostrap Components used:
+  - Navbar
+  - Carousel
+  - Button
+  - Offcanvas
+  - Card
+  - Accordion
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Vim Colorschemes</title>
     <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Sehoan Choi">
     <meta name="description" content="Personal favorite colorscheme">
@@ -16,81 +25,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light px-4" style="background-color: var(--storm-1);">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="color: var(--frost-3)">
-          <img id="brand-img"
-               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Icon-Vim.svg/1200px-Icon-Vim.svg.png"
-               alt="">
-          Vim Colorschemes
-        </a>
-        <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="pages/gruvbox.html">Gruvbox</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/nord.html">Nord</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/tender.html">Tender</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/srcery.html">Srcery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/sonokai.html">Sonokai</a>
-            </li>
-          </ul>
+    <h1 class="p-3" style="text-align: center;">Who else loves VIM?</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light px-4" style="background-color: var(--storm-1);">
+        <div class="container-fluid">
+          <h2>
+            <a class="navbar-brand" href="index.html" style="color: var(--frost-3)">
+              <img id="brand-img"
+                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Icon-Vim.svg/1200px-Icon-Vim.svg.png"
+                   alt="vim-logo">
+              Vim Colorschemes
+            </a>
+
+          </h2>
+          <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="pages/gruvbox.html">Gruvbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nord.html">Nord</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/tender.html">Tender</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/srcery.html">Srcery</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/sonokai.html">Sonokai</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="mt-3">
+      <button class="btn mb-3 ms-3 w-10" 
+              type="button" 
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas" 
+              aria-controls="offcanvas"
+              style="background-color: var(--storm-2)">
+        Click this to see the site's author!
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasLabel">Personal Website</h2>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Contact me for any issue with the site or just to reach out for coffee chat!
+          </div>
+          <a href="https://cs4640.cs.virginia.edu/sc8zt/hw1/" style="text-decoration:none; color:var(--aurora-0)">Here</a>
         </div>
       </div>
-    </nav>
-    <section class="mt-3">
       <div>
         <div id="slides" class="carousel slide row justify-content-center" data-bs-ride="carousel">
           <div class="carousel-inner" style="width: min-content;">
             <div class="carousel-item active">
               <img
                   src="https://vimcolorschemes.com/static/57555cef1dc84a1daf9ec31b110f61c6/5707d/GkIl8Fn.png"
-                  class="d-block" alt="...">
+                  class="d-block" alt="gruvbox-sample">
             </div>
             <div class="carousel-item">
               <img
                   src="https://vimcolorschemes.com/static/85cb710b0f459f9589837a03b0888efb/e4d72/VIM-molokai-colorscheme.png"
-                  class="d-block" alt="...">
+                  class="d-block" alt="monokai-sample">
             </div>
             <div class="carousel-item">
               <img
                   src="https://vimcolorschemes.com/static/4a25d33d2bc0406fe30d532c8cecda7f/5707d/overview-go.png"
-                  class="d-block" alt="...">
+                  class="d-block" alt="nord-sample">
             </div>
             <div class="carousel-item">
               <img
                   src="https://vimcolorschemes.com/static/f573ffcddd700962f8764b1a1022a52d/252bd/color_1.jpg"
-                  class="d-block" alt="...">
+                  class="d-block" alt="blue-sample">
             </div>
             <div class="carousel-item">
               <img
                   src="https://vimcolorschemes.com/static/91a5457445461e137f9f057d840089a4/520b0/7780885a-782e-11e6-8e88-150cfc70e35b.png"
-                  class="d-block" alt="...">
+                  class="d-block" alt="tender-sample">
             </div>
             <div class="carousel-item">
               <img
                   src="https://vimcolorschemes.com/static/4fd42559104891133320b71e936e3b4e/5707d/solarized8_dark_flat.png"
-                  class="d-block" alt="...">
+                  class="d-block" alt="solarized-sample">
             </div>
           </div>
         </div>
@@ -101,15 +136,58 @@
           reduce eye strain, or simply feel great when coding!</h4>
         <h4>This site contains some of my favorite colorschemes, I strongly recommend trying these out :)</h4>
       </div>
+      <div class="container px-5 my-5">
+        <h4 class="mt-4">If you liked my favorite list of colorschemes, you should also check out my choice of plugins listed below</h4>
+        <div class="accordion accordion-flush" id="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Vim-Plug
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                This plugin helps you install other plugins so much easier
+                <a href="https://github.com/junegunn/vim-plug">link</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                NerdTree
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                My favorite file explorer, you can navigate through projects with just few key strokes!
+                <a href="https://github.com/preservim/nerdtree">link</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                COC.nvim
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                The most convenient intelligence engine in vim, bring auto-complete & auto-suggestion in vim
+                <a href="https://github.com/neoclide/coc.nvim">link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="row p-2 px-4" style="border-top: double var(--storm-1);">
       <div class="col-4">
         <small style="color: var(--polar-3)">Copyright &copy; 2021 Sehoan Choi</small>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
   </body>
-  <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
 </html>

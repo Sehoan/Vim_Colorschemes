@@ -31,6 +31,17 @@ img {
   border-radius: 10px;
 }
 
+.card a {
+  text-decoration: none;
+  color: var(--storm-2);
+  background-color: var(--polar-1);
+  border-radius: 10px;
+  padding: 8px;
+}
+a:hover {
+  color: var(--storm-0);
+}
+
 #brand-img {
   width: 30px;
   height: 30px;
@@ -45,4 +56,21 @@ h5 {
 }
 p {
   color: var(--polar-1);
+}
+
+/* Bootstrap style override */
+#accordion {
+  margin-top: 20px;
+  background-color: blue;
+  border-top: solid var(--frost-3);
+}
+
+button.accordion-button.collapsed:hover {
+  background-color: var(--storm-2);
+}
+
+#accordion a {
+  text-decoration: none;
+  color: var(--aurora-3);
+  font-weight: bold;
 }
