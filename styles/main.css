@@ -1,0 +1,38 @@
+:root {
+  --polar-0: #2E3440;
+  --polar-1: #3B4252;
+  --polar-2: #434C5E;
+  --polar-3: #4C566A;
+
+  --storm-0: #D8DEE9;
+  --storm-1: #E5E9F0;
+  --storm-2: #ECEFF4;
+
+  --frost-0: #8fbcbb;
+  --frost-1: #88c0d0;
+  --frost-2: #81a1c1;
+  --frost-3: #5e81ac;
+
+  --aurora-0: #bf616a;
+  --aurora-1: #d08770;
+  --aurora-2: #ebcb8b;
+  --aurora-3: #a3be8c;
+  --aurora-4: #b48ead;
+
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+img {
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+#brand-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
